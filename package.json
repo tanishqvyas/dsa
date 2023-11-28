@@ -1,6 +1,6 @@
 {
   "name": "@tanishqvyas/dsa",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "A simple implementation of Data Structures in JavaScript",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

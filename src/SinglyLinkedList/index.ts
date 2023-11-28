@@ -120,6 +120,12 @@ export class SinglyLinkedList<T> {
 
   display(): void {
     let ptr = this.#head;
+
+    if (ptr === null) {
+      console.log("Linked List is empty!");
+      return;
+    }
+
     while (ptr !== null) {
       console.log(ptr.data);
       ptr = ptr.next;
