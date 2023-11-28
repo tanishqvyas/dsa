@@ -31,6 +31,8 @@ A simple implementation of `Singly Linked List` that supports the following oper
 
 * `display()`: Displays the contents of the linked list as strings.
 
+* `reverse()`: Reverses the linked list.
+
 ## Singly Linked List Example
 
 ```javascript
@@ -41,10 +43,18 @@ const mySinglyLinkedList = SinglyLinkedList();
 mySinglyLinkedList.push(1);
 mySinglyLinkedList.unshift(2);
 mySinglyLinkedList.push(3);
+
 mySinglyLinkedList.getMiddle(); // returns 1
+
 mySinglyLinkedList.pop(); // returns 3
 mySinglyLinkedList.shift(); // returns 2
+
 mySinglyLinkedList.display(); // returns 2
+
+mySinglyLinkedList.push(1);
+mySinglyLinkedList.reverse();
+
+mySinglyLinkedList.display(); // shows 1 2
 ```
 
 # Contributions

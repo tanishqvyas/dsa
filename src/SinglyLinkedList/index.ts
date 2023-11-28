@@ -126,4 +126,26 @@ export class SinglyLinkedList<T> {
     }
     return;
   }
+
+  reverse(): void {
+    if (this.#head === null || this.#head.next === null) {
+      return;
+    }
+
+    // more than one nodes
+    let prev: null | ListNode<T> = null;
+    let cur: null | ListNode<T> = this.#head;
+
+    this.#tail = this.#head;
+
+    while (cur !== null) {
+      const hold: null | ListNode<T> = cur.next;
+      cur.next = prev;
+      prev = cur;
+      cur = hold;
+    }
+
+    this.#head = prev;
+    return;
+  }
 }
