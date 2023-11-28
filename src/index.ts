@@ -1,4 +1,4 @@
-import SinglyLinkedList from "./src/SinglyLinkedList";
+import SinglyLinkedList from "./SinglyLinkedList";
 
 const dataStructures = {
   SinglyLinkedList,

@@ -117,6 +117,15 @@ class SinglyLinkedList<T> {
 
     return slow;
   }
+
+  display(): void {
+    let ptr = this.#head;
+    while (ptr !== null) {
+      console.log(ptr.toString());
+      ptr = ptr.next;
+    }
+    return;
+  }
 }
 
 export default SinglyLinkedList;
