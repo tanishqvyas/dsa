@@ -1,7 +1,5 @@
-import SinglyLinkedList from "./SinglyLinkedList";
+import { SinglyLinkedList } from "./SinglyLinkedList";
 
-const dataStructures = {
+export const dataStructures = {
   SinglyLinkedList,
 };
-
-export default dataStructures;
