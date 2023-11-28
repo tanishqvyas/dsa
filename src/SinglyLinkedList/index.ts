@@ -121,7 +121,7 @@ export class SinglyLinkedList<T> {
   display(): void {
     let ptr = this.#head;
     while (ptr !== null) {
-      console.log(ptr.toString());
+      console.log(ptr.data);
       ptr = ptr.next;
     }
     return;
