@@ -13,6 +13,7 @@ npm install @tanishqvyas/dsa
 # Table of Contents
 
 1. Singly Linked List
+2. Trie
 
 
 # Singly Linked List
@@ -49,12 +50,48 @@ mySinglyLinkedList.getMiddle(); // returns 1
 mySinglyLinkedList.pop(); // returns 3
 mySinglyLinkedList.shift(); // returns 2
 
-mySinglyLinkedList.display(); // returns 2
+mySinglyLinkedList.display(); // shows 2
 
 mySinglyLinkedList.push(1);
 mySinglyLinkedList.reverse();
 
 mySinglyLinkedList.display(); // shows 1 2
+```
+
+
+# Trie
+
+A simple implementation of Trie aka Prefix Tree.
+
+* `add()`: A method that takes in a string and adds it to the trie
+
+* `delete()`: A method that takes in a string and removes it from the Trie. If the string is not present it does nothing.
+
+* `contains()`: A method that takes in a string and checks whether it is present in the Trie.
+
+# Example of Trie
+
+
+```javascript
+import { Trie } from "@tanishqvyas/dsa"
+
+const myTrie = new Trie(['apple', 'banana']); // Optionally an array can be passed to prefill the Trie with these words
+
+myTrie.add('Hello');
+
+myTrie.contains('hello'); // false
+myTrie.contains('apple'); // true
+
+myTrie.contains('Hello'); // true
+
+myTrie.delete('hello'); // does nothing
+
+myTrie.delete('Hello'); // removes Hello from Trie
+myTrie.delete('banana'); // removes banana from Trie
+
+myTrie.contains('Hello'); // false;
+myTrie.contains('banana'); // false;
+myTrie.contains('apple'); // true;
 ```
 
 # Contributions
