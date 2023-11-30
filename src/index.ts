@@ -1,3 +1,4 @@
 import { SinglyLinkedList } from "./SinglyLinkedList";
+import { Trie } from "./Trie";
 
-export { SinglyLinkedList };
+export { SinglyLinkedList, Trie };
